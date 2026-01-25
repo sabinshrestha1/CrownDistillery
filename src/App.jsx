@@ -3,7 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import SpiritsPage from './pages/SpiritsPage';
+import AboutUs from './pages/AboutUs';
+import CareersPage from './pages/CareersPage';
 import AgeVerification from './components/ui/AgeVerification';
+import ScrollToTop from './components/ui/ScrollToTop';
 
 function App() {
   const [verified, setVerified] = useState(() => {
@@ -21,10 +24,13 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/spirits" element={<SpiritsPage />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/careers" element={<CareersPage />} />
         </Routes>
       </Layout>
     </Router>

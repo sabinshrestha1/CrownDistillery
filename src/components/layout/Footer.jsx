@@ -1,13 +1,20 @@
 import React from 'react';
+import Logo from '../../assets/images/Crown logo.webp';
 
 const Footer = () => {
     return (
         <footer className="bg-wood-dark text-white pt-24 pb-10 border-t border-white/10">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
                     {/* Brand Section */}
-                    <div>
-                        <h3 className="font-display text-2xl text-primary font-bold mb-6 tracking-widest">CROWN RESERVE</h3>
+                    <div className="flex flex-col items-start">
+                        <div className="flex items-center gap-4 mb-4">
+                            <img src={Logo} alt="Crown Reserve Logo" className="w-12 h-12 object-contain" />
+                            <div className="flex flex-col items-start">
+                                <h3 className="font-display text-xl text-primary font-bold tracking-widest uppercase leading-none">CROWN RESERVE</h3>
+                                <span className="text-[9px] tracking-[0.4em] text-gray-400 uppercase leading-tight mt-0.5 ml-0.5 group-hover:text-primary transition-colors">DISTILLERY</span>
+                            </div>
+                        </div>
                         <p className="text-gray-400 text-sm leading-relaxed mb-6 font-serif">
                             A dedication to the art of distillation. Creating moments of gold from the grains of the earth.
                         </p>
@@ -29,9 +36,11 @@ const Footer = () => {
                     <div>
                         <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-8 font-sans">Navigation</h4>
                         <ul className="space-y-4 text-gray-400 text-sm font-sans font-light">
-                            <li><a className="hover:text-white transition-colors" href="#">Home</a></li>
-                            <li><a className="hover:text-white transition-colors" href="#spirits">Spirits</a></li>
-                            <li><a className="hover:text-white transition-colors" href="#story">Our Story</a></li>
+                            <li><a className="hover:text-white transition-colors" href="/">Home</a></li>
+                            <li><a className="hover:text-white transition-colors" href="/spirits">Spirits</a></li>
+                            <li><a className="hover:text-white transition-colors" href="/about-us">About Us</a></li>
+                            <li><a className="hover:text-white transition-colors" href="/careers">Careers</a></li>
+                            <li><a className="hover:text-white transition-colors" href="/#story">Our Story</a></li>
                         </ul>
                     </div>
 
@@ -50,13 +59,14 @@ const Footer = () => {
                                 <span className="material-symbols-outlined text-primary text-sm mt-0.5">factory</span>
                                 <div>
                                     <span className="block text-white text-[10px] font-bold uppercase tracking-wider mb-0.5">Factory Location</span>
-                                    <span className="text-xs">Suddodhan–4, Rupandehi, Nepal</span>
+                                    <span className="text-xs">Suddodhan–3, Rupandehi, Nepal</span>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className="material-symbols-outlined text-primary text-sm mt-1">phone</span>
                                 <div className="flex flex-col">
-                                    <a href="tel:+9771XXXXXXX" className="hover:text-white transition-colors">+977 9802345060</a>
+                                    <a href="tel:+9779857024040" className="hover:text-white transition-colors">+977 9857024040</a>
+                                    <a href="tel:+9779801029601" className="hover:text-white transition-colors">+977 9801029601</a>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
@@ -67,27 +77,10 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-
-                    {/* Brand Experience */}
-                    <div>
-                        <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-8 font-sans">Brand Experience</h4>
-                        <ul className="space-y-4 text-gray-400 text-sm font-sans font-light">
-                            <li className="flex items-center gap-3">
-                                <span className="relative flex h-2 w-2">
-                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                                </span>
-                                <span className="text-white text-xs uppercase tracking-widest font-bold">Live Crafting Active</span>
-                            </li>
-                            <li className="border-l border-white/10 pl-4 py-1">
-                                <p className="text-[11px] leading-relaxed">Our Rickhouses never sleep. Aging in progress across 14 bonded warehouses.</p>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
 
                 <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-600 uppercase tracking-widest">
-                    <p>&copy; {new Date().getFullYear()} Crown Reserve Distillery. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Crown Reserve Distillery. Website by <b>Biz Bazar Ltd.</b></p>
                     <div className="flex gap-6 mt-4 md:mt-0">
                         <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
                         <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>

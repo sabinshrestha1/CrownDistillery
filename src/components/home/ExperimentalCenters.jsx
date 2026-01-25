@@ -4,17 +4,8 @@ import crownLogo from '../../assets/images/Crown logo.webp';
 const ExperimentalCenters = () => {
     return (
         <section className="relative mt-20 py-24 min-h-[700px]">
-            <div className="absolute inset-0 z-0">
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="absolute inset-0 w-full h-full object-cover opacity-60"
-                >
-                    <source src="https://videos.pexels.com/video-files/3191572/3191572-sd_640_360_25fps.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+            <div className="absolute inset-0 z-0 bg-wood-dark">
+                {/* Video removed as per request */}
                 <div className="absolute inset-0 bg-black/50"></div>
             </div>
 

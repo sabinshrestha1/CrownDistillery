@@ -3,7 +3,6 @@ import Hero from '../components/home/Hero';
 import PremiumShowcase from '../components/home/PremiumShowcase';
 import LegacyStory from '../components/home/LegacyStory';
 import ExperimentalCenters from '../components/home/ExperimentalCenters';
-import BoardOfDirectors from '../components/home/BoardOfDirectors';
 
 const Home = () => {
     return (
@@ -12,7 +11,6 @@ const Home = () => {
             <PremiumShowcase />
             <LegacyStory />
             <ExperimentalCenters />
-            <BoardOfDirectors />
         </>
     );
 };

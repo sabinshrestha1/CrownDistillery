@@ -9,7 +9,7 @@ import NarendraImg from "../../assets/images/Narendra.webp";
 const BoardOfDirectors = () => {
     const directors = [
         { name: "Minraj Bhusal", title: "Chairman", image: MinrajImg },
-        { name: "Ambika Prasad Paudel", title: "Managing Director", image: AmbikaImg },
+        { name: "Ambika Prasad Paudel", title: "Director", image: AmbikaImg },
         { name: "Er. Sailesh Acharya", title: "Director", image: SaileshImg },
         { name: "Prakash Bhusal", title: "Director", image: PrakashImg },
         { name: "Bhumika Shah", title: "Director", image: BhumikaImg },
@@ -26,19 +26,19 @@ const BoardOfDirectors = () => {
                     <div className="w-24 h-0.5 bg-primary mx-auto mt-6"></div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 max-w-7xl mx-auto px-4">
                     {directors.map((director, index) => (
-                        <div key={index} className="group relative">
-                            <div className="relative overflow-hidden aspect-[3/4] border border-white/10 bg-black/20">
+                        <div key={index} className="group relative flex flex-col items-center text-center">
+                            <div className="relative overflow-hidden aspect-square rounded-full border border-white/10 bg-black/20 mb-4 max-w-[150px] w-full">
                                 <img
                                     src={director.image}
                                     alt={director.name}
-                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
                                 />
-                                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/80 to-transparent p-6 pt-24 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                                    <h3 className="text-white font-display text-xl tracking-wide">{director.name}</h3>
-                                    <p className="text-primary text-xs uppercase tracking-widest mt-1">{director.title}</p>
-                                </div>
+                            </div>
+                            <div className="space-y-1">
+                                <h3 className="text-white font-display text-xs tracking-wider font-bold group-hover:text-primary transition-colors">{director.name}</h3>
+                                <p className="text-gray-500 text-[9px] uppercase tracking-[0.2em]">{director.title}</p>
                             </div>
                         </div>
                     ))}
