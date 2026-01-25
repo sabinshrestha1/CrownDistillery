@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/images/Crown logo.webp';
 
 const Footer = () => {
@@ -6,6 +7,18 @@ const Footer = () => {
         <footer className="bg-wood-dark text-white pt-24 pb-10 border-t border-white/10">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+                    {/* Brand Section */}
+                    {/* ... (Brand section remains unchanged, but easier to just replace navigation block or file start) ... */}
+                    {/* actually I will use multi_replace for cleaner edit or just target the Navigation block if I imported Link globally. 
+                       Wait, I need to add the import first. I'll replace the top of file and the navigation block. 
+                       Let's do two replacements in one go using replace_file_content is not possible for multiple chunks.
+                       I'll use replace_file_content for the import, then another for the list.
+                       Actually, I can just replace from top to the end of navigation? That's too much content.
+                       I will do it in two steps or use correct context.
+                       Let's just replace the whole file content for safety/cleanliness? 
+                       No, that's expensive.
+                       I'll replace the import first.
+                    */}
                     {/* Brand Section */}
                     <div className="flex flex-col items-start">
                         <div className="flex items-center gap-4 mb-4">
@@ -36,10 +49,10 @@ const Footer = () => {
                     <div>
                         <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-8 font-sans">Navigation</h4>
                         <ul className="space-y-4 text-gray-400 text-sm font-sans font-light">
-                            <li><a className="hover:text-white transition-colors" href="/">Home</a></li>
-                            <li><a className="hover:text-white transition-colors" href="/spirits">Spirits</a></li>
-                            <li><a className="hover:text-white transition-colors" href="/about-us">About Us</a></li>
-                            <li><a className="hover:text-white transition-colors" href="/careers">Careers</a></li>
+                            <li><Link className="hover:text-white transition-colors" to="/">Home</Link></li>
+                            <li><Link className="hover:text-white transition-colors" to="/spirits">Spirits</Link></li>
+                            <li><Link className="hover:text-white transition-colors" to="/about-us">About Us</Link></li>
+                            <li><Link className="hover:text-white transition-colors" to="/careers">Careers</Link></li>
                             <li><a className="hover:text-white transition-colors" href="/#story">Our Story</a></li>
                         </ul>
                     </div>
