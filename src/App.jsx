@@ -4,6 +4,7 @@ import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import SpiritsPage from './pages/SpiritsPage';
 import AboutUs from './pages/AboutUs';
+import OurStory from './pages/OurStory';
 import CareersPage from './pages/CareersPage';
 import AgeVerification from './components/ui/AgeVerification';
 import ScrollToTop from './components/ui/ScrollToTop';
@@ -30,6 +31,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/spirits" element={<SpiritsPage />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/our-story" element={<OurStory />} />
           <Route path="/careers" element={<CareersPage />} />
         </Routes>
       </Layout>
