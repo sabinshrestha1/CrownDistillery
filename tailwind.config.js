@@ -12,10 +12,10 @@ export default {
         "primary-dim": "#C59D5F", // Original muted gold
         "primary-dark": "#8A6D3B",
         "background-light": "#F9F7F2", // Lighter warm white
-        "background-dark": "#050505", // True Black
-        "wood-dark": "#1A1614",
+        "background-dark": "#0d0d0d", // Slightly lighter than true black
+        "wood-dark": "#2a2420", // Lightened wood tone
         "rust": "#964B00",
-        "charcoal": "#121212"
+        "charcoal": "#1a1a1a"
       },
       fontFamily: {
         display: ["'Cinzel'", "serif"],

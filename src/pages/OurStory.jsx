@@ -12,13 +12,13 @@ const OurStory = () => {
         <div className="relative min-h-screen pt-20 bg-black overflow-hidden">
 
             {/* Global Gold Glow Backgrounds */}
-            <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-gradient-radial from-yellow-500/20 via-yellow-600/10 to-transparent blur-3xl opacity-30"></div>
-            <div className="absolute top-1/4 right-0 w-[700px] h-[700px] bg-gradient-radial from-yellow-400/20 via-yellow-500/10 to-transparent blur-3xl opacity-30"></div>
-            <div className="absolute -bottom-40 left-1/3 w-[800px] h-[800px] bg-gradient-radial from-yellow-500/20 via-yellow-600/10 to-transparent blur-3xl opacity-20"></div>
+            <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-gradient-radial from-yellow-500/30 via-yellow-600/20 to-transparent blur-3xl opacity-40"></div>
+            <div className="absolute top-1/4 right-0 w-[700px] h-[700px] bg-gradient-radial from-yellow-400/30 via-yellow-500/20 to-transparent blur-3xl opacity-40"></div>
+            <div className="absolute -bottom-40 left-1/3 w-[800px] h-[800px] bg-gradient-radial from-yellow-500/30 via-yellow-600/20 to-transparent blur-3xl opacity-30"></div>
 
             {/* Hero Section */}
             <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
-                
+
                 {/* Soft Gold Outline */}
                 <div className="absolute -inset-2 border-2 border-yellow-500/20 rounded-xl blur-sm"></div>
 
@@ -26,9 +26,9 @@ const OurStory = () => {
                     <img
                         src={bgImg}
                         alt="Himalayan Background"
-                        className="w-full h-full object-cover lg:scale-110 brightness-75 contrast-110"
+                        className="w-full h-full object-cover lg:scale-110 brightness-110 contrast-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/80 to-black"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60"></div>
                     <div className="absolute inset-0 bg-gradient-to-tr from-yellow-500/10 via-yellow-400/5 to-transparent"></div>
                 </div>
 
@@ -50,7 +50,7 @@ const OurStory = () => {
 
             {/* The Foundation */}
             <section className="py-32 relative overflow-hidden">
-                
+
                 {/* Soft Gold Outline */}
                 <div className="absolute -inset-4 border-2 border-yellow-500/20 rounded-xl blur-sm"></div>
                 <div className="absolute -inset-8 bg-yellow-500/10 blur-3xl rounded-xl"></div>
@@ -106,10 +106,10 @@ const OurStory = () => {
             <section className="relative py-48 overflow-hidden bg-black">
 
                 {/* Gold Gradient Background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-black via-[#1a1200] to-black"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-black via-[#2a1d00] to-black"></div>
 
                 {/* Soft Gold Glow */}
-                <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-primary/20 blur-[160px] opacity-40"></div>
+                <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-primary/40 blur-[160px] opacity-60"></div>
 
                 {/* Top Gold Line */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-48 bg-gradient-to-b from-primary to-transparent"></div>

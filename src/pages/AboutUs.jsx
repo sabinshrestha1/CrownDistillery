@@ -9,8 +9,8 @@ const AboutUs = () => {
             {/* Hero Section */}
             <section className="relative h-[60vh] flex items-center justify-center overflow-hidden border-b border-white/5">
                 <div className="absolute inset-0 z-0">
-                    <div className="absolute inset-0 bg-black/60 z-10"></div>
-                    <div className="absolute inset-0 bg-[url('/assets/images/luxury-bg.webp')] bg-cover bg-fixed bg-center"></div>
+                    <div className="absolute inset-0 bg-black/40 z-10"></div>
+                    <div className="absolute inset-0 bg-[url('/assets/images/luxury-bg.webp')] bg-cover bg-fixed bg-center filter brightness-110"></div>
                 </div>
                 <div className="container mx-auto px-4 relative z-20 text-center scale-95 animate-fade-in">
                     <span className="text-primary text-xs font-bold tracking-[0.5em] uppercase mb-6 block animate-slide-up">Our Legacy</span>
@@ -105,7 +105,7 @@ const AboutUs = () => {
                                 <p className="text-primary text-sm uppercase tracking-[0.2em] mt-2">Chairman, Crown Reserve Distillery</p>
                             </div>
 
-                            <div className="text-gray-200 font-serif text-xl leading-relaxed relative bg-white/5 p-10 border border-white/10 backdrop-blur-md rounded-2xl shadow-inner">
+                            <div className="text-gray-200 font-serif text-xl leading-relaxed relative bg-white/10 p-10 border border-white/20 backdrop-blur-lg rounded-2xl shadow-inner shadow-primary/5">
                                 <span className="absolute -left-4 -top-8 text-8xl text-primary/20 font-serif">"</span>
                                 <div className="space-y-6">
                                     <p>

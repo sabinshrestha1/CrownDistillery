@@ -46,8 +46,8 @@ const PremiumShowcase = () => {
         <section className="bg-background-dark relative overflow-hidden">
 
             {/* Global Soft Gold Glow */}
-            <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-yellow-500/10 blur-[200px] opacity-40 pointer-events-none"></div>
-            <div className="absolute bottom-0 right-1/3 w-[800px] h-[800px] bg-yellow-400/10 blur-[180px] opacity-30 pointer-events-none"></div>
+            <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-yellow-500/20 blur-[200px] opacity-60 pointer-events-none"></div>
+            <div className="absolute bottom-0 right-1/3 w-[800px] h-[800px] bg-yellow-400/20 blur-[180px] opacity-50 pointer-events-none"></div>
 
             <div className="pt-24 pb-16 flex flex-col items-center relative z-10">
                 <div className="w-[1px] h-32 bg-gradient-to-b from-transparent to-primary/50 mb-8"></div>
@@ -61,17 +61,17 @@ const PremiumShowcase = () => {
                     <div
                         key={idx}
                         className={`relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden 
-                            ${idx % 2 === 1 ? 'bg-[#0a0a0a]' : 'bg-background-dark'}
-                            rounded-xl border-2 border-yellow-500/20 mx-4 md:mx-16 lg:mx-24 my-12`}
+                            ${idx % 2 === 1 ? 'bg-[#151515]' : 'bg-background-dark/80'}
+                            rounded-xl border-2 border-yellow-500/30 mx-4 md:mx-16 lg:mx-24 my-12`}
                     >
                         {/* Background Image with Darkened Mountain and Glow */}
                         <div className="absolute inset-0 z-0 pointer-events-none">
                             <img
                                 src={bgImg}
                                 alt=""
-                                className={`w-full h-full object-cover filter grayscale contrast-125 brightness-50 ${idx % 2 === 1 ? 'scale-x-[-1]' : ''}`}
+                                className={`w-full h-full object-cover filter grayscale contrast-125 brightness-75 ${idx % 2 === 1 ? 'scale-x-[-1]' : ''}`}
                             />
-                            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-background-dark/90 to-black/80"></div>
+                            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-background-dark/70 to-black/60"></div>
                         </div>
 
                         <div className="container mx-auto px-4 md:px-16 lg:px-24 relative z-10 py-20">
@@ -103,7 +103,7 @@ const PremiumShowcase = () => {
                                 <div className="w-full md:w-1/2 flex justify-center items-center relative">
                                     <div className="relative group max-w-[450px] w-full cursor-pointer">
                                         {/* Golden Glow Behind Image */}
-                                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-yellow-400/20 blur-[120px] rounded-full pointer-events-none"></div>
+                                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-yellow-400/30 blur-[120px] rounded-full pointer-events-none"></div>
                                         <img
                                             src={product.image}
                                             alt={product.name}

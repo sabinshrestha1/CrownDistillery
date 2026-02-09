@@ -37,8 +37,8 @@ const Navbar = () => {
 
     return (
         <nav className={`fixed w-full z-50 transition-all duration-500 ${scrolled
-                ? 'bg-[#0a0a0a]/95 backdrop-blur-xl border-b border-primary/30 shadow-[0_10px_30px_-10px_rgba(212,175,55,0.1)]'
-                : 'bg-transparent border-b border-transparent'
+            ? 'bg-[#151515]/95 backdrop-blur-xl border-b border-primary/30 shadow-[0_10px_30px_-10px_rgba(212,175,55,0.1)]'
+            : 'bg-transparent border-b border-transparent'
             }`}>
             {/* Top Gold Line Gradient */}
             <div className={`absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent transition-opacity duration-500 ${scrolled ? 'opacity-100' : 'opacity-0'}`}></div>
@@ -92,7 +92,7 @@ const Navbar = () => {
 
                                     {/* Dropdown Menu */}
                                     <div
-                                        className={`absolute right-0 mt-2 w-56 bg-[#0f0f0f]/95 backdrop-blur-2xl border border-primary/20 shadow-[0_10px_40px_-5px_rgba(0,0,0,0.8)] transition-all duration-300 origin-top-right rounded-sm overflow-hidden ${dropdownOpen ? 'opacity-100 scale-100 translate-y-0 visible' : 'opacity-0 scale-95 -translate-y-2 invisible'}`}
+                                        className={`absolute right-0 mt-2 w-56 bg-[#181818]/95 backdrop-blur-2xl border border-primary/20 shadow-[0_10px_40px_-5px_rgba(0,0,0,0.8)] transition-all duration-300 origin-top-right rounded-sm overflow-hidden ${dropdownOpen ? 'opacity-100 scale-100 translate-y-0 visible' : 'opacity-0 scale-95 -translate-y-2 invisible'}`}
                                     >
                                         <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
 
@@ -131,7 +131,7 @@ const Navbar = () => {
 
             {/* Mobile Menu Dropdown */}
             {mobileMenuOpen && (
-                <div className="md:hidden bg-[#0a0a0a]/98 backdrop-blur-xl border-t border-primary/20 absolute w-full left-0 top-20 animate-fade-in-down shadow-2xl">
+                <div className="md:hidden bg-[#121212]/98 backdrop-blur-xl border-t border-primary/20 absolute w-full left-0 top-20 animate-fade-in-down shadow-2xl">
                     <div className="px-4 pt-4 pb-6 space-y-2 sm:px-3 text-center">
                         {navItems.map((item) => (
                             <Link

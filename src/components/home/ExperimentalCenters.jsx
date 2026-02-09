@@ -6,7 +6,7 @@ const ExperimentalCenters = () => {
         <section className="relative mt-20 py-24 min-h-[700px]">
             {/* Background overlay */}
             <div className="absolute inset-0 z-0 bg-wood-dark">
-                <div className="absolute inset-0 bg-black/50"></div>
+                <div className="absolute inset-0 bg-black/20"></div>
             </div>
 
             <div className="container mx-auto px-4 relative z-10 text-center">
