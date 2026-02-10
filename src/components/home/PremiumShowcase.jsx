@@ -61,17 +61,17 @@ const PremiumShowcase = () => {
                     <div
                         key={idx}
                         className={`relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden 
-                            ${idx % 2 === 1 ? 'bg-[#151515]' : 'bg-background-dark/80'}
-                            rounded-xl border-2 border-yellow-500/30 mx-4 md:mx-16 lg:mx-24 my-12`}
+                            ${idx % 2 === 1 ? 'bg-[#0d0d0d]' : 'bg-[#0a0a0a]'}
+                            rounded-xl border-2 border-primary/20 mx-4 md:mx-16 lg:mx-24 my-12 shadow-2xl`}
                     >
                         {/* Background Image with Darkened Mountain and Glow */}
                         <div className="absolute inset-0 z-0 pointer-events-none">
                             <img
                                 src={bgImg}
                                 alt=""
-                                className={`w-full h-full object-cover filter grayscale contrast-125 brightness-75 ${idx % 2 === 1 ? 'scale-x-[-1]' : ''}`}
+                                className={`w-full h-full object-cover filter grayscale contrast-125 brightness-[0.25] ${idx % 2 === 1 ? 'scale-x-[-1]' : ''}`}
                             />
-                            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-background-dark/70 to-black/60"></div>
+                            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black/90"></div>
                         </div>
 
                         <div className="container mx-auto px-4 md:px-16 lg:px-24 relative z-10 py-20">
@@ -80,10 +80,10 @@ const PremiumShowcase = () => {
                                     <span className="text-xs font-sans tracking-[0.5em] text-primary font-bold uppercase mb-4 block">
                                         {product.tag}
                                     </span>
-                                    <h2 className="text-[2.5rem] md:text-[4rem] font-display font-medium text-white leading-tight mb-8">
+                                    <h2 className="text-[2.5rem] md:text-[4rem] font-display font-medium text-white leading-tight mb-8 drop-shadow-2xl">
                                         {product.name}
                                     </h2>
-                                    <p className="text-lg md:text-xl text-gray-400 font-serif leading-relaxed mb-12 max-w-xl mx-auto md:mx-0 italic">
+                                    <p className="text-lg md:text-xl text-gray-200 font-serif leading-relaxed mb-12 max-w-xl mx-auto md:mx-0 italic drop-shadow-lg">
                                         {product.description}
                                     </p>
                                     <div className={`flex flex-col ${idx % 2 === 1 ? 'md:items-end' : 'md:items-start'} gap-4`}>

@@ -1,5 +1,5 @@
 import React from 'react';
-import experimentalVideo from '../../assets/images/ccc.gif';
+import experimentalVideo from '../../assets/images/ccc.webp';
 
 const Hero = () => {
     return (

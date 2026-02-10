@@ -100,7 +100,7 @@ const ShowcaseSection = ({
               {displayName}
             </h2>
 
-            <p className="text-lg md:text-xl text-gray-400 font-serif leading-relaxed mb-12 max-w-xl mx-auto md:mx-0 italic">
+            <p className="text-lg md:text-xl text-gray-200 font-serif leading-relaxed mb-12 max-w-xl mx-auto md:mx-0 italic drop-shadow-md">
               {description}
             </p>
 

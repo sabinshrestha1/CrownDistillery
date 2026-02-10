@@ -31,7 +31,7 @@ const ProductCard = ({ name, image, series, description, rating = "", tag = "Col
             <div className="px-6 pt-4 pb-12">
                 <span className="text-[10px] tracking-widest text-primary/70 uppercase font-sans">{series}</span>
                 <h4 className="font-display text-2xl text-primary mt-1 mb-2">{displayName}</h4>
-                <p className="font-serif text-sm text-gray-400 leading-relaxed mb-6">{description}</p>
+                <p className="font-serif text-sm text-gray-300 leading-relaxed mb-6">{description}</p>
 
                 {flavors.length > 0 && (
                     <div className="flex gap-2 mb-4">
