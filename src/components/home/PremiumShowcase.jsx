@@ -24,7 +24,7 @@ const products = [
         series: "Premium Series",
         description: "Smooth, premium whisky defined by balance and elegance. Crafted for those who appreciate the finer details of master blending.",
         tag: "Best Seller",
-        abv: "42.8% ALC/VOL",
+        abv: "34.28% ALC/VOL",
         temperature: "| 40°up",  // <-- added temperature
         url: "/spirits/victa-deluxe"
     },
