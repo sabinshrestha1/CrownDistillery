@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://crowndistillery.com.np/sitemap.xml
