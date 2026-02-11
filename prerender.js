@@ -23,7 +23,10 @@ const routesToPrerender = ['/', '/about-us', '/spirits', '/our-story', '/careers
     const port = 1337;
     console.log(`Server started on port ${port}`);
 
-    const browser = await puppeteer.launch({ headless: "new" });
+    const browser = await puppeteer.launch({
+        headless: "new",
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
 
     for (const route of routesToPrerender) {
         const page = await browser.newPage();

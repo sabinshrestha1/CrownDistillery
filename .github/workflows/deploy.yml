@@ -40,6 +40,14 @@ jobs:
           node-version: 18
           cache: npm
 
+      - name: Cache puppeteer
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/puppeteer
+          key: ${{ runner.os }}-puppeteer-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-puppeteer-
+
       - run: npm ci
       - run: npm run build
 
